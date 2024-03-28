@@ -1,0 +1,14 @@
+$background: #242424;
+$text-color: #DEDEDE;
+$home-text-color: #ffffff60;
+$home-main-text-color: #FF985F;
+$card-background-color: #66666636;
+$card-border-color: 2px solid #A84130;
+$border-radius: 10px;
+
+$main-font: 'Jura';
+
+html {
+    background-color: $background;
+    font-family: $main-font;
+}
