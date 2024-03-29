@@ -5,8 +5,8 @@
     width: 100%;
 
     #logo {
-        height: 5rem;
-        width: 5rem;
+        height: 8vw;
+        width: 8vw;
     }
     
     #list-link{
@@ -16,9 +16,10 @@
     }
 
     .navbar-link {
-        margin-left: 5rem;
+        margin-left: 8vw;
         text-decoration: none;
         color: $text-color;
+        font-size: 1.7vw;
     
     }
 }
