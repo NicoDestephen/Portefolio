@@ -13,45 +13,45 @@
         width: 8vw;
     }
     
-    #list-link{
+    #list-link {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-    .navbar-link {
-        margin-left: 8vw;
-        text-decoration: none;
-        color: $text-color;
-        font-size: 1.3vw;
-        display: flex;
-        align-items: center;
-    }
+        .navbar-link {
+            margin-left: 8vw;
+            text-decoration: none;
+            color: $text-color;
+            font-size: 1.3vw;
+            display: flex;
+            align-items: center;
 
-    .navbar-link:hover {
-        filter: drop-shadow($home-main-text-color 0rem 0rem 10px);
+            &:hover {
+                filter: drop-shadow($home-main-text-color 0rem 0rem 10px);
+            }
+        }
     }
 
     #highlight-title {
         position: relative;
         display: flex;
-    }
-    
-    #highlight-title::after {
-        content: '';
-        position: absolute;
-        left: 0%;
-        bottom: -8px;
-        width: 0;
-        height: 3px;
-        background-color: $home-main-text-color;
-        transition: width 0.3s ease;
-        border-radius: $border-radius;
-    }
-    
-    #highlight-title:hover::after {
-        width: calc(100% + 10px);
-        left: -5px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0%;
+            bottom: -8px;
+            width: 0;
+            height: 3px;
+            background-color: $home-main-text-color;
+            transition: width 0.3s ease;
+            border-radius: $border-radius;
+        }
+
+        &:hover::after {
+            width: calc(100% + 10px);
+            left: -5px;
+        }
     }
 
     #download {

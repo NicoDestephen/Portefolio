@@ -6,10 +6,10 @@
 
 {% block body %}
     <div id="home-page-body">
-        <div>
-            <p id="welcome">Bienvenue</p>
+        <div class="text-container">
+            <p id="welcome" class="moving-text-left">Bienvenue</p>
             <p id="intro">PORTEFOLIO de Nicolas DESTEPHEN</p>
-            <p id="fonction">Développeur web junior ...</p>
+            <p id="fonction" class="moving-text-right">Développeur web junior ...</p>
         </div>
         <div id="button">
             <button id="bouton-slide">
@@ -18,6 +18,26 @@
                 <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
                 <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
             </button>
+        </div>
+    </div>
+
+    <div id="about-page">
+        <div id="about-page-id">
+            <div id="id-container">
+                <h1 id="work">Développeur web et web mobile</h1>
+                <h2 id="identification">Nicolas DESTEPHEN</h2>
+            </div>
+        </div>
+        <div id="about-page-about">
+            <div id="about-container">
+                <h1 id="about-title">A propos ( )</h1>
+                <span id="about-description">
+                    /* Ancien éducateur spécialisé en reconversion, j’ai terminé un bootcamp en développement Web & Mobile. 
+                    J’ai choisi d’apprendre le PHP en premier langage de programmation mais toutes les technologies Web & Mobile m’intéressent.
+                    Actuellement j’effectue un stage chez Numerilis où je developpe une application avec Symfony et React.
+                    Je me dirige vers un profil full-stack. */
+                </span>
+            </div>
         </div>
     </div>
 {% endblock %}

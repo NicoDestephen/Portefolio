@@ -1,0 +1,57 @@
+#about-page {
+    #about-page-id {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+    #id-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 8vw;
+        width: 44vw;
+        background-color: $card-background-color;
+        border: $card-border-color;
+        border-radius: $border-radius;  
+    }
+
+    #work {
+        font-size: 2.8vw;
+        color: $home-main-text-color;
+    }
+
+    #identification {
+        font-size: 2.3vw;
+        color: $text-color;
+    }
+
+    #about-page-about {
+        display: flex;
+        justify-content: flex-start;
+    }
+    #about-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 30vw;
+        width: 26vw;
+        background-color: $card-background-color;
+        border: $card-border-color;
+        border-radius: $border-radius;
+        padding: 1rem;
+        margin-left: 4vh;
+    }
+
+    #about-title {
+        font-size: 2vw;
+        color: $home-main-text-color;
+        margin-bottom: 1rem;
+    }
+
+    #about-description {
+        font-size: 1.6vw;
+        color: $text-color;
+    }
+}

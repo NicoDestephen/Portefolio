@@ -6,3 +6,4 @@
  */
 import './styles/app.scss';
 import './loaded';
+import './slideButton';
