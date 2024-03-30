@@ -4,8 +4,20 @@
     {{ parent() }} - Home
 {% endblock %}
 
-{# {% block body %}
-    <p id="welcome">Bienvenue</p>
-    <p id="intro">PORTEFOLIO de Nicolas DESTEPHEN</p>
-    <p id="welcome">Développeur web junior ...</p>
-{% endblock %} #}
+{% block body %}
+    <div id="home-page-body">
+        <div>
+            <p id="welcome">Bienvenue</p>
+            <p id="intro">PORTEFOLIO de Nicolas DESTEPHEN</p>
+            <p id="fonction">Développeur web junior ...</p>
+        </div>
+        <div id="button">
+            <button id="bouton-slide">
+                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
+                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
+                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
+                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
+            </button>
+        </div>
+    </div>
+{% endblock %}

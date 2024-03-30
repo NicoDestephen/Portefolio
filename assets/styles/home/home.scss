@@ -1,7 +1,57 @@
-#welcome {
-    color: $home-text-color;
+body {
+    opacity: 0;
+    transition: opacity 3s ease;
 }
 
-#intro {
-    color: $home-main-text-color;
+body.loaded {
+    opacity: 1;
+}
+
+#home-page-body {
+    #welcome {
+        color: $home-text-color;
+        font-size: 4vw;
+        padding-left: 2rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #intro {
+        color: $home-main-text-color;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #fonction {
+        color: $home-text-color;
+        font-size: 4vw;
+        padding-right: 2rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #button {
+        display: flex;
+        justify-content: center;
+        margin-top: 17vh;
+        
+        #bouton-slide {
+            height: 9vh;
+            width: 1vh;
+            border: $button-border-color;
+            border-radius: $border-radius;
+            background-color: $card-background-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.4vh;
+
+            .arrow {
+                width: 1.8vh;
+                margin: 0.2vh 0 0.2vh 0;
+            }
+        }
+    }
 }
