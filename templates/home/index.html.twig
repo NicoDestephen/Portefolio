@@ -9,34 +9,49 @@
         <div class="text-container">
             <p id="welcome" class="moving-text-left">Bienvenue</p>
             <p id="intro">PORTEFOLIO de Nicolas DESTEPHEN</p>
-            <p id="fonction" class="moving-text-right">Développeur web junior ...</p>
+            <p id="fonction" class="moving-text-right">Développeur web full-stack junior ...</p>
         </div>
-        <div id="button">
-            <button id="bouton-slide">
-                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
-                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
-                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
-                <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
-            </button>
-        </div>
+        {% include '/component/_slideButton.html.twig' %}
     </div>
 
-    <div id="about-page">
+    <div id="about-page" class="hidden">
         <div id="about-page-id">
             <div id="id-container">
                 <h1 id="work">Développeur web et web mobile</h1>
                 <h2 id="identification">Nicolas DESTEPHEN</h2>
             </div>
         </div>
-        <div id="about-page-about">
-            <div id="about-container">
-                <h1 id="about-title">A propos ( )</h1>
-                <span id="about-description">
-                    /* Ancien éducateur spécialisé en reconversion, j’ai terminé un bootcamp en développement Web & Mobile. 
-                    J’ai choisi d’apprendre le PHP en premier langage de programmation mais toutes les technologies Web & Mobile m’intéressent.
-                    Actuellement j’effectue un stage chez Numerilis où je developpe une application avec Symfony et React.
-                    Je me dirige vers un profil full-stack. */
-                </span>
+        <div id="lala">
+                <div id="about-container">
+                    <h1 id="about-title">A propos ( )</h1>
+                    <span id="about-description">
+                        /* Ancien éducateur spécialisé en reconversion, j’ai terminé un bootcamp en développement Web & Mobile. 
+                        J’ai choisi d’apprendre le PHP en premier langage de programmation mais toutes les technologies Web & Mobile m’intéressent.
+                        Actuellement j’effectue un stage chez Numerilis où je developpe une application avec Symfony et React.
+                        Je me dirige vers un profil full-stack. */
+                    </span>
+                </div>
+                <img id="picture" src="{{ asset('build/images/picture.svg') }}">
+                <div id="stack-container">
+                    <h1 id="stack-title">Langages ( )</h1>
+                    <span id="stack-description">
+                        PHP - JS - HTML - CSS - SASS - SQL
+                    </span>
+                    <h1 id="framework-title">Frameworks ( )</h1>
+                    <span id="framework-description">
+                        Symfony - React - Bootstrap
+                    </span>
+                    <h1 id="gestionnaire-title">Gestionnaire ( )</h1>
+                    <span id="gestionnaire-description">
+                        Github - Composer - Yarn
+                    </span>
+                </div>
+        </div>
+        <div id="about-page-project">
+            <div id="project-container">
+                {% include '/component/_slideButton.html.twig' %}
+                    <h1 id="project">Voir mes projets</h1>
+                {% include '/component/_slideButton.html.twig' %}
             </div>
         </div>
     </div>
