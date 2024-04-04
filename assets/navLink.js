@@ -7,6 +7,9 @@ if (homeLink) {
     homeLink.addEventListener('click', function(home) {
         home.preventDefault();
 
+        navbar.classList.remove('slideButton-clicked');
+        navbar.classList.remove('aboutLink-clicked');
+
         aboutPage.classList.add('slide-down');
         homePageBody.classList.remove('hidden');
 
@@ -25,6 +28,8 @@ if (aboutLink) {
         homePageBody.classList.add('slide-up');
         aboutPage.classList.remove('slide-down');
         aboutPage.classList.remove('hidden');
+        
+        navbar.classList.add('aboutLink-clicked');
         
         setTimeout(function() {
             aboutPage.classList.add('slide-up');

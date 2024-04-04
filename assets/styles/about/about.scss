@@ -33,20 +33,20 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 8vw;
-        width: 44vw;
+        height: 11vh;
+        width: 77vh;
         background-color: $card-background-color;
         border: $card-border-color;
         border-radius: $border-radius;  
     }
 
     #work, #project {
-        font-size: 2.8vw;
+        font-size: 5vh;
         color: $home-main-text-color;
     }
 
     #identification {
-        font-size: 2.3vw;
+        font-size: 4vh;
         color: $text-color;
     }
 
@@ -55,8 +55,8 @@
         justify-content: space-between;
 
         #picture {
-            width: 48vh;
-            height: 48vh;
+            width: 44vh;
+            height: 50vh;
         }
 
         #about-container, #stack-container {
@@ -64,8 +64,8 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            height: 30vw;
-            width: 26vw;
+            height: 50vh;
+            width: 45vh;
             background-color: $card-background-color;
             border: $card-border-color;
             border-radius: $border-radius;
@@ -75,13 +75,23 @@
         }
     
         #about-title, #stack-title, #framework-title, #gestionnaire-title {
-            font-size: 2vw;
+            font-size: 2.6vh;
             color: $home-main-text-color;
             margin-bottom: 1rem;
+            line-height: 3vh;
         }
     
-        #about-description, #stack-description, #framework-description, #gestionnaire-description {
-            font-size: 1.6vw;
+        #about-description {
+            font-size: 2.6vh;
+            line-height: 3vh;
+            color: $text-color;
+        }
+
+        #stack-description, #framework-description, #gestionnaire-description {
+            margin: 1rem 0 2rem 0;
+            padding: 0 6rem 0 2rem;
+            font-size: 2.6vh;
+            line-height: 3vh;
             color: $text-color;
         }
     }
@@ -92,8 +102,8 @@
             justify-content: space-around;
             align-items: center;
             flex-direction: row;
-            height: 8vw;
-            width: 44vw;
+            height: 11vh;
+            width: 77vh;
             background-color: $card-background-color;
             border: $card-border-color;
             border-radius: $border-radius;  
