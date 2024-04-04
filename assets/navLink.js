@@ -12,11 +12,16 @@ if (homeLink) {
 
         aboutPage.classList.add('slide-down');
         homePageBody.classList.remove('hidden');
-
+        
         setTimeout(function() {
             homePageBody.classList.add('slide-down');
             aboutPage.classList.remove('slide-up');
             document.title = 'Portefolio DESTEPHEN - Home';
+
+            setTimeout(function() {
+            aboutPage.classList.add('hidden'); 
+            }, 1000);
+
         }, 3);
     });
 }
