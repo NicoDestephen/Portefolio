@@ -1,10 +1,10 @@
+var slideButton = document.getElementById('bouton-slide');
+var homePageBody = document.getElementById('home-page-body');
+var aboutPage = document.getElementById('about-page');
+var projectContainer = document.getElementById('project-container');
+
 document.addEventListener('DOMContentLoaded', function() {
-    var slideButton = document.getElementById('bouton-slide');
-
     slideButton.addEventListener('click', function() {
-        var homePageBody = document.getElementById('home-page-body');
-        var aboutPage = document.getElementById('about-page');
-
         isTransitioning = true;
         
         homePageBody.classList.add('slide-up');
@@ -21,4 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
             isTransitioning = false;
         }, 3);
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (projectContainer) {
+        projectContainer.addEventListener('click', function(event) {
+            if (event.target && event.target.matches('#bouton-slide')) {
+                console.log('Bouton de défilement cliqué !');
+
+                // homePageBody.classList.remove('slide-down');
+                // homePageBody.classList.remove('slide-up');
+
+                // aboutPage.classList.remove('slide-up');
+                // aboutPage.classList.remove('slide-down');
+                
+                // navbar.classList.remove('aboutLink-clicked');
+                // navbar.classList.remove('slideButton-clicked');
+
+                
+                setTimeout(function() {
+                    aboutPage.classList.add('slide-up2');
+                    document.title = 'Portefolio DESTEPHEN - Mes projets';
+                }, 3);
+            }
+        });
+    }
 });

@@ -4,6 +4,12 @@
     opacity: 1;
 }
 
+#about-page.slide-up2 {
+    transition: transform 1.5s ease, opacity 1.5s ease;
+    transform: translateY(-350%);
+    opacity: 1;
+}
+
 #about-page.slide-down {
     transition: transform 3.5s ease, opacity 1s ease;
     transform: translateY(100%);

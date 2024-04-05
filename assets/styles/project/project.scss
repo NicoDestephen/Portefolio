@@ -1,0 +1,107 @@
+#project-page {
+    #title-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+    
+        #main-title-project-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 11vh;
+            width: 77vh;
+            background-color: rgba(102, 102, 102, 0.2117647059);
+            border: 2px solid #A84130;
+            border-radius: 10px;
+        }
+        
+        #main-title {
+            font-size: 5vh;
+            color: $home-main-text-color;
+        }
+    }
+
+    #project-container {
+        position: relative;
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, transparent 10%, rgba(66, 66, 66, 55%) 50%, transparent 90%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 23vh;
+        max-width: 100%;
+        background-color: rgba(102, 102, 102, 0.2117647059);
+        border-top: 2px solid #A84130;
+        border-bottom: 2px solid #A84130;
+        padding: 5vh;
+        margin-bottom: 2vh;
+
+        #project-infos {
+            width: 50%;
+            
+            #project-title {
+                color: $home-main-text-color;
+                font-size: 4vh;
+                font-weight: 700;
+            }
+
+            #project-description {
+                display: flex;
+                justify-content: space-around;
+                margin: 3vh 0 0 0;
+
+                #project-space {
+                    display: flex;
+                    align-items: center;
+                    color: $text-color;
+                    font-size: 3.5vh;
+                    width: 43%;
+
+                    #space-icon {
+                        margin-right: 1vh;
+                    }
+                }
+    
+                #project-long {
+                    display: flex;
+                    align-items: center;
+                    color: $text-color;
+                    font-size: 3.5vh;
+                    width: 43%;
+
+                    #duration-icon {
+                        margin-right: 1vh;
+                    }
+                }
+            }
+        }
+
+        #project-git-link {
+            width: 50%;
+            height: 14vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;   
+        }
+        
+        #grow-button {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 1vh;
+
+            #button-grow {
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
+}
+
+

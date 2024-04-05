@@ -55,4 +55,18 @@
             </div>
         </div>
     </div>
+
+    <div id="project-page">
+        <div id="title-container">
+            <div id="main-title-project-container">
+                <h1 id="main-title">Mes projets</h1>
+            </div>
+        </div>
+        {% include '/component/_projectContainer.html.twig' with {'Titre': 'Numerilis','Cadre': 'Stage', 'Durée': '2 mois'} %}
+        {% include '/component/_projectContainer.html.twig' with {'Titre': 'Origin\'s Digital','Cadre': 'Projet d\'école', 'Durée': '2 mois'} %}
+        {% include '/component/_projectContainer.html.twig' with {'Titre': 'Cylaid','Cadre': 'Projet d\'école', 'Durée': '1 mois'} %}
+        {% include '/component/_projectContainer.html.twig' with {'Titre': 'Projet Geralt','Cadre': 'Projet d\'école', 'Durée': '2 semaines'} %}
+
+
+    </div>
 {% endblock %}
