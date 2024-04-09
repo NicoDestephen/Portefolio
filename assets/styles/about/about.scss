@@ -1,13 +1,13 @@
 #about-page.slide-up {
-    transition: transform 1.5s ease, opacity 1.5s ease;
+    transition: transform 2.5s ease, opacity 2.5s ease;
     transform: translateY(-100%);
     opacity: 1;
 }
 
 #about-page.slide-up2 {
-    transition: transform 1.5s ease, opacity 1.5s ease;
+    transition: transform 2.5s ease, opacity 1s ease;
     transform: translateY(-350%);
-    opacity: 1;
+    opacity: 0;
 }
 
 #about-page.slide-down {
@@ -20,7 +20,9 @@
     display: none;
 }
 
-#about-page {    
+#about-page {  
+    opacity: 0;
+
     #id-container, #project-container, #about-container, #stack-container {
         &:hover {
             box-shadow: 0 0 10px $home-main-text-color;

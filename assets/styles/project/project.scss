@@ -1,9 +1,38 @@
+#project-page.slide-up {
+    transition: transform 2.5s ease, opacity 1.5s ease;
+    transform: translateY(-35.5%);
+    opacity: 1;
+}
+
+#project-page.slide-up2 {
+    transition: transform 1.5s ease, opacity 2.5s ease;
+    transform: translateY(-82.8%);
+    opacity: 1;
+}
+
+#project-page.slide-down {
+    transition: transform 3.5s ease, opacity 1s ease;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+#project-page.slide-down2 {
+    transition: transform 3.5s ease, opacity 1s ease;
+    transform: translateY(35%);
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
 #project-page {
+    opacity: 0;
+
     #title-container {
         display: flex;
         justify-content: center;
         margin-bottom: 2vh;
-        margin-top: 2vh;
     
         #main-title-project-container {
             display: flex;
@@ -23,12 +52,12 @@
         }
     }
 
-    #project-container {
-        position: relative;
-        overflow: hidden;
-        background-image: linear-gradient(to bottom, transparent 10%, rgba(66, 66, 66, 55%) 50%, transparent 90%);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+    #project-field {
+        // position: relative;
+        // overflow: hidden;
+        // background-image: linear-gradient(to bottom, transparent 10%, rgba(66, 66, 66, 55%) 50%, transparent 90%);
+        // background-repeat: no-repeat;
+        // background-size: 100% 100%;
 
         display: flex;
         justify-content: space-around;

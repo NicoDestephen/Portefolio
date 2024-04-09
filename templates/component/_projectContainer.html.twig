@@ -1,14 +1,14 @@
-<div id="project-container">
+<div id="project-field">
     <div id="project-infos">
-        <h1 id="project-title">{{ Titre }}</h1>
+        <h1 id="project-title">{{ title }}</h1>
             <div id="project-description">
-                <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}">{{ Cadre }}</h2>
-                <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}">{{ Durée }}</h2>
+                <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}">{{ space }}</h2>
+                <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}">{{ duration }}</h2>
             </div>
     </div>
     <div id="project-git-link">
         <div>
-            <a href="https://github.com/NicoDestephen"><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}"></a>
+            <a href={{ link }}><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}"></a>
         </div>
     </div>
     <div id="grow-button">

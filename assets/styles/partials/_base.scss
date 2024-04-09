@@ -9,6 +9,16 @@ $border-radius: 10px;
 
 $main-font: 'Jura';
 
+body {
+    opacity: 0;
+    transition: opacity 3s ease;
+
+    &.loaded {
+        opacity: 1;
+        height: 100vh;
+    }
+}
+
 html {
     background-color: $background;
     font-family: $main-font;
