@@ -10,6 +10,13 @@
     opacity: 1;
 }
 
+#project-page.slide-up3 {
+    transition: transform 3.5s ease, opacity 2.5s ease;
+    transform: translateY(-82.8%);
+    opacity: 1;
+    margin-top: 153.4vh;
+}
+
 #project-page.slide-down {
     transition: transform 3.5s ease, opacity 1s ease;
     transform: translateY(100%);
