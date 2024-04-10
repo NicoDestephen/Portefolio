@@ -5,7 +5,7 @@
 }
 
 #about-page.slide-up2 {
-    transition: transform 2.5s ease, opacity 1s ease;
+    transition: transform 4.5s ease, opacity 1.5s ease;
     transform: translateY(-350%);
     opacity: 0;
 }
@@ -14,6 +14,13 @@
     transition: transform 3.5s ease, opacity 1s ease;
     transform: translateY(100%);
     opacity: 0;
+}
+
+#about-page.slide-down2 {
+    transition: transform 1.5s ease, opacity 3.5s ease;
+    transform: translateY(227%);
+    opacity: 1;
+    margin-top: -195vh;
 }
 
 .hidden {
@@ -96,7 +103,7 @@
         }
 
         #stack-description, #framework-description, #gestionnaire-description {
-            margin: 1rem 0 2rem 0;
+            margin: 0.5rem 0 2rem 0;
             padding: 0 6rem 0 2rem;
             font-size: 2.6vh;
             line-height: 3vh;
