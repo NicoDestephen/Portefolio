@@ -70,4 +70,30 @@
         {% include '/component/_projectContainer.html.twig' with {'title': 'Escapotron','space': 'Projet d\'école', 'duration': '24h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
         {% include '/component/_projectContainer.html.twig' with {'title': 'Heaven\'s Hair','space': 'Projet d\'école', 'duration': '48h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
     </div>
+
+    <div id="contact-page">
+        <div id="contact-container">
+            <div id="title-container">
+                <div id="main-title-contact-container">
+                    <h1 id="main-title">Contact</h1>
+                </div>
+            </div>
+            <div id="phone">
+                <img id="phone-logo" src="{{ asset('build/images/phone.svg') }}">
+                <p>06 31 19 36 46</p>
+            </div>
+            <img id="contact-page-logo" src="{{ asset('build/images/logoCercle.svg') }}">
+            <div id="mail">
+                <img id="mail-logo" src="{{ asset('build/images/mail.svg') }}">
+                <p>ndestephen@gmail.com</p>
+            </div>
+            <div id="linkedin">
+                <img id="linkedin-logo" src="{{ asset('build/images/linkedin.svg') }}">
+                <a href="https://www.linkedin.com/in/nicolas-destephen" target="_blank" id="linkedin-link">Nicolas Destephen</a>
+            </div>
+        </div>
+        
+
+    </div>
 {% endblock %}
+
