@@ -12,10 +12,46 @@ $main-font: 'Jura';
 body {
     opacity: 0;
     transition: opacity 3s ease;
+    overflow: hidden;
 
     &.loaded {
         opacity: 1;
-        height: 100vh;
+        max-height: 100vh;
+    }
+
+    #content.slide-up-home-to-about {
+        transition: transform 2.5s ease;
+        transform: translateY(-20%);
+    }
+
+    #content.slide-up-home-to-project {
+        transition: transform 2.5s ease;
+        transform: translateY(-40%);
+    }
+
+    #content.slide-up-home-to-contact {
+        transition: transform 2.5s ease;
+        transform: translateY(-81%);
+    }
+
+    #slide-up-project-to-contact {
+        transition: transform 2.5s ease;
+        transform: translateY(-10%);
+    }
+
+    #content.slide-down-about-to-home {
+        transition: transform 2.1s ease;
+        transform: translateY(0%);
+    }
+
+    #content.slide-down-contact-to-project {
+        transition: transform 2.1s ease;
+        transform: translateY(-40%);
+    }
+
+    #content.slide-down-contact-to-about {
+        transition: transform 2.1s ease;
+        transform: translateY(-20%);
     }
 }
 

@@ -1,16 +1,25 @@
-#navbar.slideButton-clicked {
-    margin-bottom: 15vh;
-}
+// #navbar.slideButton-clicked {
+//     margin-bottom: 15vh;
+// }
 
-#navbar.aboutLink-clicked {
-    margin-bottom: 15vh;
-}
+// #navbar.aboutLink-clicked {
+//     margin-bottom: 15vh;
+// }
 
-#navbar.projectLink-clicked {
-    margin-bottom: 5vh;
-}
+// #navbar.projectLink-clicked {
+//     margin-bottom: 5vh;
+// }
+
+// #navbar.contactLink-clicked {
+//     margin-bottom: 0vh;
+// }
 
 #navbar {
+    position: fixed;
+    background-color: $background;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     width: 100%;

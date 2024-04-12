@@ -1,34 +1,9 @@
-#about-page.slide-up {
-    transition: transform 2.5s ease, opacity 2.5s ease;
-    transform: translateY(-100%);
-    opacity: 1;
-}
-
-#about-page.slide-up2 {
-    transition: transform 4.5s ease, opacity 1.5s ease;
-    transform: translateY(-350%);
-    opacity: 0;
-}
-
-#about-page.slide-down {
-    transition: transform 3.5s ease, opacity 1s ease;
-    transform: translateY(100%);
-    opacity: 0;
-}
-
-#about-page.slide-down2 {
-    transition: transform 1.5s ease, opacity 3.5s ease;
-    transform: translateY(227%);
-    opacity: 1;
-    margin-top: -188vh;
-}
-
 .hidden {
     display: none;
 }
 
 #about-page {  
-    opacity: 0;
+    margin-bottom: 30vh;
 
     #id-container, #project-container, #about-container, #stack-container {
         &:hover {
