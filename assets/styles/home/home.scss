@@ -48,6 +48,10 @@
             align-items: center;
             padding: 1.4vh;
 
+            &:hover {
+                box-shadow: 0 0 10px $home-main-text-color;
+            }
+
             .arrow {
                 width: 1.8vh;
                 margin: 0.2vh 0 0.2vh 0;

@@ -5,6 +5,7 @@ var aboutPage = document.getElementById('about-page');
 var projectPage = document.getElementById('project-page');
 
 var projectContainer = document.getElementById('project-container');
+var contactContainer = document.getElementById('contact-field');
 
 var content = document.getElementById('content');
 
@@ -27,6 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 content.classList.add('slide-down-contact-to-project');
                 content.classList.remove('slide-down-contact-to-about');
                 document.title = 'Portefolio DESTEPHEN - Mes projets';
+            }
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (contactContainer) {
+        contactContainer.addEventListener('click', function(slide) {
+            if (slide.target && slide.target.matches('#bouton-slide')) {
+                content.classList.add('slide-up-home-to-contact');
+                content.classList.remove('slide-down-contact-to-project');
+                document.title = 'Portefolio DESTEPHEN - Contact';
             }
         });
     }

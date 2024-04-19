@@ -3,6 +3,7 @@ var aboutLink = document.querySelector('.about-link');
 var projectLink = document.querySelector('.project-link');
 var contactLink = document.querySelector('.contact-link');
 
+var reloadHome = document.getElementById('reload-home');
 var homePage = document.getElementById('home-page-body');
 var aboutPage = document.getElementById('about-page');
 var projectPage = document.getElementById('project-page');
@@ -19,6 +20,19 @@ function updateUserHistory(page) {
 function resetCSS() {
     content.classList.remove('slide-up-home-to-about', 'slide-up-home-to-project', 'slide-up-home-to-contact', 'slide-up-project-to-contact', 'slide-down-about-to-home', 'slide-down-contact-to-project', 'slide-down-contact-to-about')
 }
+
+function handlePageLoad() {
+    if (!localStorage.getItem('visited')) {
+        if (homeLink) {
+            reloadHome.click();
+            localStorage.setItem('visited', true);
+        }
+    } else {
+        localStorage.removeItem('visited');
+    }
+}
+
+document.addEventListener("DOMContentLoaded", handlePageLoad);
 
 if (homeLink) {
     homeLink.addEventListener('click', function(home) {

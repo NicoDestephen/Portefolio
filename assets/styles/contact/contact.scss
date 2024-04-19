@@ -40,6 +40,10 @@
             width: 40vh;
             height: 40vh;
             margin: 2vh 16vh 0vh 16vh;
+
+            &:hover {
+                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+            }
         }
 
         #phone {
@@ -47,6 +51,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            &:hover {
+                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+            }
+
+            #phone-logo {
+                width: 21vh;
+                height: 25vh;
+            }
         }
 
         #mail {
@@ -54,6 +67,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            
+
+            &:hover {
+                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+            }
+
+            #mail-logo {
+                width: 21vh;
+                height: 25vh;
+            }
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+            }
         }
 
         #linkedin {
@@ -62,15 +90,19 @@
             align-items: center;
             justify-content: center;
             width: 30%;
-            // margin-bottom: 30vh;
+
+            &:hover {
+                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+            }
 
             #linkedin-logo {
                 width: 25vh;
                 height: 25vh;
-                // margin-bottom: 2vh;
             }
 
             #linkedin-link {
+                display: flex;
+                flex-direction: column-reverse;
                 text-align: center;
                 text-decoration: none;
                 color: $text-color;
@@ -83,21 +115,23 @@
             align-items: center;
             justify-content: center;
             width: 30%;
-            // margin-bottom: 30vh;
+
+            &:hover {
+                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+            }
 
             #github-logo {
-                width: 25vh;
+                width: 21vh;
                 height: 25vh;
-                // margin-bottom: 2vh;
             }
 
             #git-link {
+                display: flex;
+                flex-direction: column-reverse;
                 text-align: center;
                 text-decoration: none;
                 color: $text-color;
             }
-        }
-        
+        }  
     }
-    
 }

@@ -61,13 +61,132 @@
                     <h1 id="main-title">Mes projets</h1>
                 </div>
             </div>
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Numerilis','space': 'Stage', 'duration': '2 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Portefolio','space': 'Projet personnel', 'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Origin\'s Digital','space': 'Projet d\'école', 'duration': '2 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Cylaid','space': 'Projet d\'école', 'duration': '1 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Projet Geralt','space': 'Projet d\'école', 'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Escapotron','space': 'Projet d\'école', 'duration': '24h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
-            {% include '/component/_projectContainer.html.twig' with {'title': 'Heaven\'s Hair','space': 'Projet d\'école', 'duration': '48h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git'} %}
+            <div class="splide" id="project-carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Numerilis','space': 'Stage', 
+                                'duration': '2 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Plate forme de gestion de notes de frais, demande de congés et de
+                                compte rendu d\’activité à destination des employés de Numerilis sous la forme d\’une API
+                                Rest sur Symfony pour le back  pour la partie administrateur et d\’une API front sur React
+                                pour la partie utilisateur.',
+                                'image_urls': [
+                                    asset('build/images/p2home.png'),
+                                    asset('build/images/p2category.png'),
+                                    asset('build/images/p2list.png'),
+                                    asset('build/images/p2part.png'),
+                                    asset('build/images/p2post.png'),
+                                    asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Portefolio','space': 'Projet personnel', 
+                                'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Projet réalisé pour mettre en place mon portefolio en ligne. J\'ai utilisé le framework Symfony 
+                                pour réaliser ce projet en mélengant du PHP et du Javascript. Ce travail m\'a permis de me challenger sur l\'utilisation
+                                de Javascript, langage que je n\'avais pas beaucoup utilisé lors de ma formation.',
+                                'image_urls': [
+                                        asset('build/images/p2home.png'),
+                                        asset('build/images/p2category.png'),
+                                        asset('build/images/p2list.png'),
+                                        asset('build/images/p2part.png'),
+                                        asset('build/images/p2post.png'),
+                                        asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Origin\'s Digital','space': 'Projet d\'école', 
+                                'duration': '2 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Plate-forme de VOD en version web et web mobile pour apprendre le
+                                développement web à distance. Ce projet s\'inscrit dans le cadre de ma formation de développeur web. Il à été codé sur
+                                le framework Symfony et m\'à servit de suport lors du passage de mon titre de fin de formation.',
+                                'image_urls': [
+                                        asset('build/images/p2home.png'),
+                                        asset('build/images/p2category.png'),
+                                        asset('build/images/p2list.png'),
+                                        asset('build/images/p2part.png'),
+                                        asset('build/images/p2post.png'),
+                                        asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Cylaid','space': 'Projet d\'école', 
+                                'duration': '1 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Marketplace mobile de partage de pièces de vélo. L\'application web à été développée avec 
+                                PHP pour la partie back end, le front end est quand à lui assuré par JavaScript et CSS et HTML. 
+                                Nous avons utilisé une architecture MVC ainsi qu\'une base de donnée SQL.',
+                                'image_urls': [
+                                        asset('build/images/p2home.png'),
+                                        asset('build/images/p2category.png'),
+                                        asset('build/images/p2list.png'),
+                                        asset('build/images/p2part.png'),
+                                        asset('build/images/p2post.png'),
+                                        asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Projet Geralt','space': 'Projet d\'école', 
+                                'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Site web statique type CV virtuel d\’un personnage fictif. Pour de ce projet j\'ai pu mettre en 
+                                application les premières notions abordées en 1 mois de formation telles que la mise en place de formulaires et 
+                                leur sécurisation grâce à l\'utilisation de PHP, les basiques du CSS et du HTML ainsi que quelques ajouts en JS.',
+                                'image_urls': [
+                                        asset('build/images/p2home.png'),
+                                        asset('build/images/p2category.png'),
+                                        asset('build/images/p2list.png'),
+                                        asset('build/images/p2part.png'),
+                                        asset('build/images/p2post.png'),
+                                        asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Escapotron','space': 'Projet d\'école', 
+                                'duration': '24h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Appli mobile de générateur automatique d\’excuses. Ce projet à été développé dans le cadre d\'un
+                                hackathon. Nous avons développé cette application en HTML, CSS et Javascript. Un algorithme prend en charge la génération des excuses 
+                                en prenant en compte tous les éléments sélectionnés par l\'utilisateur.',
+                                'image_urls': [
+                                        asset('build/images/p2home.png'),
+                                        asset('build/images/p2category.png'),
+                                        asset('build/images/p2list.png'),
+                                        asset('build/images/p2part.png'),
+                                        asset('build/images/p2post.png'),
+                                        asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Heaven\'s Hair','space': 'Projet d\'école', 
+                                'duration': '48h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'description': 'Plate forme de prise de rendez vous chez des coiffeurs L\’Oreal. Cette application à été développée
+                                sur le framework Symfony en utilisant les langages PHP, HTML, CSS et Javascript. Ce projet à été un vrai challenge car ZINEDINE
+                                et WISSAL ont été trop relou putain ! merci EDDY !',
+                                'image_urls': [
+                                        asset('build/images/p2home.png'),
+                                        asset('build/images/p2category.png'),
+                                        asset('build/images/p2list.png'),
+                                        asset('build/images/p2part.png'),
+                                        asset('build/images/p2post.png'),
+                                        asset('build/images/p2profile.png')
+                                ]
+                            } %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="project-page-contact">
+                <div id="contact-field">
+                    {% include '/component/_slideButton.html.twig' %}
+                        <h1 id="contact">Me contacter</h1>
+                    {% include '/component/_slideButton.html.twig' %}
+                </div>
+            </div>
         </div>
         <div id="contact-page">
             <div id="contact-container">
@@ -80,18 +199,23 @@
                     <img id="phone-logo" src="{{ asset('build/images/phone.svg') }}">
                     <p>06 31 19 36 46</p>
                 </div>
-                <img id="contact-page-logo" src="{{ asset('build/images/logoCercle.svg') }}">
+                <a class="home-link" href="{{ path('home') }}"><img id="contact-page-logo" src="{{ asset('build/images/logoCercle.svg') }}"></a>
                 <div id="mail">
-                    <img id="mail-logo" src="{{ asset('build/images/mail.svg') }}">
-                    <p>ndestephen@gmail.com</p>
+                    <a href="mailto:ndestephen@gmail.com">
+                        <img id="mail-logo" src="{{ asset('build/images/mail.svg') }}">
+                        <p>ndestephen@gmail.com</p>
+                    </a>
                 </div>
                 <div id="github">
-                    <img id="github-logo" src="{{ asset('build/images/gitLink.svg') }}">
-                    <a href="https://github.com/NicoDestephen" target="_blank" id="git-link">Profil Github</a>
+                    <a href="https://github.com/NicoDestephen" target="_blank" id="git-link">Profil Github
+                        <img id="github-logo" src="{{ asset('build/images/gitLink.svg') }}">
+                    </a>
                 </div>
                 <div id="linkedin">
-                    <img id="linkedin-logo" src="{{ asset('build/images/linkedin.svg') }}">
-                    <a href="https://www.linkedin.com/in/nicolas-destephen" target="_blank" id="linkedin-link">Profil Linkedin</a>
+                    
+                    <a href="https://www.linkedin.com/in/nicolas-destephen" target="_blank" id="linkedin-link">Profil Linkedin
+                        <img id="linkedin-logo" src="{{ asset('build/images/linkedin.svg') }}">
+                    </a>
                 </div>
             </div>
         </div>

@@ -7,4 +7,6 @@
 import './styles/app.scss';
 import './loaded';
 import './slideButton';
+import './growButton';
 import './navLink';
+import './carousel';

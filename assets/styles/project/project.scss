@@ -1,14 +1,39 @@
+.splide {
+    visibility: visible;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: center
+}
+
+.splide__arrow {
+    background: $card-background-color;
+    border: $button-border-color;
+    svg {
+        fill: $home-main-text-color;
+    }
+}
+
+.splide__pagination {
+    bottom: -0.5rem;
+}
+
+.splide__pagination__page.is-active {
+    background: $home-main-text-color
+}
+
 .hidden {
     display: none;
 }
 
 #project-page {
-    margin-bottom: 30vh;
+    margin-bottom: 34vh;
 
     #title-container {
         display: flex;
         justify-content: center;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
     
         #main-title-project-container {
             display: flex;
@@ -18,7 +43,7 @@
             height: 11vh;
             width: 77vh;
             background-color: rgba(102, 102, 102, 0.2117647059);
-            border: 2px solid #A84130;
+            border: $card-border-color;
             border-radius: 10px;
         }
         
@@ -28,16 +53,16 @@
         }
     }
 
-    #project-field {
+    .project-field {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
         flex-wrap: wrap;
         height: 23vh;
-        max-width: 100%;
+        width: 135vh;
         background-color: rgba(102, 102, 102, 0.2117647059);
-        border-top: 2px solid #A84130;
-        border-bottom: 2px solid #A84130;
+        border: $card-border-color;
+        border-radius: $border-radius;
         padding: 5vh;
         margin-bottom: 2vh;
 
@@ -59,7 +84,7 @@
                     display: flex;
                     align-items: center;
                     color: $text-color;
-                    font-size: 3.5vh;
+                    font-size: 2.6vh;
                     width: 43%;
 
                     #space-icon {
@@ -71,7 +96,7 @@
                     display: flex;
                     align-items: center;
                     color: $text-color;
-                    font-size: 3.5vh;
+                    font-size: 2.6vh;
                     width: 43%;
 
                     #duration-icon {
@@ -88,8 +113,22 @@
             justify-content: flex-end;
             align-items: center;   
         }
+
+        .description {
+            width: 100%;
+            color: $text-color;
+            font-size: 3.5vh;
+            margin-top: 1vh;
+            display: none;
+
+            p {
+                color: $text-color;
+                font-size: 2.3vh;
+                padding: 1vh;
+            }
+        }
         
-        #grow-button {
+        .grow-button {
             display: flex;
             justify-content: center;
             width: 100%;
@@ -98,6 +137,92 @@
             #button-grow {
                 background-color: transparent;
                 border: none;
+            }
+        }
+
+        #thumbnail-carousel {
+            display: none;
+            padding: 0 10vh 0 10vh;
+
+            .splide__track {
+                .splide__list {
+                    .splide__slide {
+                        justify-content: flex-start;
+                        img {
+                            width: 10vh;
+                            height: 19vh;
+                            margin: 0 1vh 0 1vh;
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+
+    #thumbnail-carousel.hidden {
+        display: block;
+    }
+
+    .project-field.grow {
+        height: 56vh;
+    }
+
+    .grow-button.clic {
+        margin-top: 1vh;
+        transform: rotate(180deg);
+    }
+
+    .description.hidden {
+        display: grid;
+    }
+
+    #project-page-contact {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+
+        #contact-field {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            height: 11vh;
+            width: 77vh;
+            background-color: $card-background-color;
+            border: $card-border-color;
+            border-radius: $border-radius;
+
+            #contact {
+                font-size: 5vh;
+                color: $home-main-text-color;
+            }
+     
+            #button {
+                display: flex;
+                justify-content: center;
+                
+                #bouton-slide {
+                    height: 9vh;
+                    width: 1vh;
+                    border: $button-border-color;
+                    border-radius: $border-radius;
+                    background-color: $card-background-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1.4vh;
+
+                    &:hover {
+                        box-shadow: 0 0 10px $home-main-text-color;
+                    }
+        
+                    .arrow {
+                        width: 1.8vh;
+                        margin: 0.2vh 0 0.2vh 0;
+                    }
+                }
             }
         }
     }

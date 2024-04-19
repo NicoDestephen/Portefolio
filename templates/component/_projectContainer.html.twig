@@ -1,19 +1,36 @@
-<div id="project-field">
+<div class="project-field">
     <div id="project-infos">
         <h1 id="project-title">{{ title }}</h1>
-            <div id="project-description">
-                <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}">{{ space }}</h2>
-                <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}">{{ duration }}</h2>
-            </div>
+        <div id="project-description">
+            <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}">{{ space }}</h2>
+            <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}">{{ duration }}</h2>
+        </div>
     </div>
     <div id="project-git-link">
         <div>
-            <a href={{ link }}><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}"></a>
+            <a href={{ link }} target="_blank"><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}"></a>
         </div>
     </div>
-    <div id="grow-button">
+    <div class='description' class='hidden'>
+        <h2 id="project-description">Description</h2>
+        <p>{{ description }}</p>
+    </div>
+    <div class="splide thumbnail-carousel" id="thumbnail-carousel">
+        <div class="splide__track thumbnail-carousel">
+            <ul class="splide__list thumbnail-carousel">
+                {% for image_url in image_urls %}
+                <li class="splide__slide thumbnail-carousel">
+                    <img src="{{ image_url }}">
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="grow-button">
         <button id="button-grow">
             <img class="arrow" src="{{ asset('build/images/Arrow.svg') }}">
         </button>
     </div>
 </div>
+
+
