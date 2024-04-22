@@ -16,14 +16,16 @@
         <p>{{ description }}</p>
     </div>
     <div class="splide thumbnail-carousel" id="thumbnail-carousel">
-        <div class="splide__track thumbnail-carousel">
-            <ul class="splide__list thumbnail-carousel">
+        <div class="splide__track">
+            <ul class="splide__list">
                 {% for image_url in image_urls %}
-                <li class="splide__slide thumbnail-carousel">
-                    <img src="{{ image_url }}">
-                </li>
+                    <li class="splide__slide">
+                        <div id="thumbnail-field">
+                            <img src="{{ image_url }}">
+                        </div>
+                    </li>
                 {% endfor %}
-            </ul>
+             </ul>
         </div>
     </div>
     <div class="grow-button">

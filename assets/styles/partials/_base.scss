@@ -21,12 +21,12 @@ body {
 
     #content.slide-up-home-to-about {
         transition: transform 2.5s ease;
-        transform: translateY(-26%);
+        transform: translateY(-27%);
     }
 
     #content.slide-up-home-to-project {
         transition: transform 2.5s ease;
-        transform: translateY(-53%);
+        transform: translateY(-54%);
     }
 
     #content.slide-up-home-to-contact {
@@ -36,7 +36,7 @@ body {
 
     #slide-up-project-to-contact {
         transition: transform 2.5s ease;
-        transform: translateY(-10%);
+        transform: translateY(-11%);
     }
 
     #content.slide-down-about-to-home {
@@ -46,12 +46,12 @@ body {
 
     #content.slide-down-contact-to-project {
         transition: transform 2.1s ease;
-        transform: translateY(-53%);
+        transform: translateY(-54%);
     }
 
     #content.slide-down-contact-to-about {
         transition: transform 2.1s ease;
-        transform: translateY(-26%);
+        transform: translateY(-27%);
     }
 }
 

@@ -51,14 +51,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            &:hover {
-                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
-            }
+            margin-left: 10%;
 
             #phone-logo {
                 width: 21vh;
                 height: 25vh;
+
+                &:hover {
+                    filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+                }
             }
         }
 
@@ -67,15 +68,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
-
-            &:hover {
-                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
-            }
+            margin-right: 10%;
 
             #mail-logo {
                 width: 21vh;
                 height: 25vh;
+
+                &:hover {
+                    filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+                }
             }
 
             a {
@@ -91,13 +92,13 @@
             justify-content: center;
             width: 30%;
 
-            &:hover {
-                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
-            }
-
             #linkedin-logo {
                 width: 25vh;
                 height: 25vh;
+
+                &:hover {
+                    filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+                }
             }
 
             #linkedin-link {
@@ -116,13 +117,13 @@
             justify-content: center;
             width: 30%;
 
-            &:hover {
-                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
-            }
-
             #github-logo {
                 width: 21vh;
                 height: 25vh;
+
+                &:hover {
+                    filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+                }
             }
 
             #git-link {

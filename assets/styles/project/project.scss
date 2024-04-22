@@ -16,7 +16,7 @@
 }
 
 .splide__pagination {
-    bottom: -0.5rem;
+    bottom: -0.2rem;
 }
 
 .splide__pagination__page.is-active {
@@ -28,7 +28,7 @@
 }
 
 #project-page {
-    margin-bottom: 34vh;
+    margin-bottom: 4vh;
 
     #title-container {
         display: flex;
@@ -111,7 +111,11 @@
             height: 14vh;
             display: flex;
             justify-content: flex-end;
-            align-items: center;   
+            align-items: center;
+
+            #gitlink-icon:hover {
+                filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+            }
         }
 
         .description {
@@ -148,16 +152,28 @@
                 .splide__list {
                     .splide__slide {
                         justify-content: flex-start;
-                        img {
-                            width: 10vh;
-                            height: 19vh;
-                            margin: 0 1vh 0 1vh;
-                        }
+
+                        #thumbnail-field {
+                                display: flex;
+                                align-items: center;
+                                width: 20vh;
+                                height: 20vh;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }      
                     }
                 }
             }
           
         }
+    }
+
+    #project-page-contact.grow {
+        margin-top: 1vh;
     }
 
     #thumbnail-carousel.hidden {
@@ -180,7 +196,7 @@
     #project-page-contact {
         display: flex;
         justify-content: center;
-        margin-top: 2vh;
+        margin-top: 34vh;
 
         #contact-field {
             display: flex;
