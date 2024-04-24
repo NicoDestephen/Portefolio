@@ -10,3 +10,4 @@ import './slideButton';
 import './growButton';
 import './navLink';
 import './carousel';
+import './modal';

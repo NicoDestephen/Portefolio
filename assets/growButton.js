@@ -8,18 +8,19 @@ document.addEventListener('DOMContentLoaded', function() {
             growButton.addEventListener('click', function() {
                 var projectField = growButton.closest('.project-field');
                 var description = projectField.querySelector('.description');
-                var projectPageContact = projectCarousel.closest('#project-page').querySelector('#project-page-contact');
+                var projectPageContact = document.querySelector('.project-page-contact');
                 var thumbnail = projectField.querySelector('.thumbnail-carousel');
                 
                 projectField.classList.toggle('grow');
                 growButton.classList.toggle('clic');
                 description.classList.toggle('hidden');
                 thumbnail.classList.toggle('hidden');
+                projectPageContact.classList.remove('grow');
 
                 if (projectField.classList.contains('grow')) {
-                    projectPageContact.classList.add('grow');
+                    projectPageContact.classList.toggle('grow');
                 } else {
-                    projectPageContact.classList.remove('grow');
+                    projectPageContact.classList.add('grow');
                 }
             });
         });

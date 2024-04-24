@@ -63,24 +63,14 @@
             </div>
             <div class="splide" id="project-carousel">
                 <div class="splide__track">
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                </div>
                     <ul class="splide__list">
-                        {# <li class="splide__slide">
-                            {% include '/component/_projectContainer.html.twig' with {'title': 'Numerilis','space': 'Stage', 
-                                'duration': '2 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
-                                'description': 'Plate forme de gestion de notes de frais, demande de congés et de
-                                compte rendu d\’activité à destination des employés de Numerilis sous la forme d\’une API
-                                Rest sur Symfony pour le back  pour la partie administrateur et d\’une API front sur React
-                                pour la partie utilisateur.',
-                                'image_urls': [
-                                    asset('build/images/cyclaid/p2home.png'),
-                                    asset('build/images/cyclaid/p2category.png'),
-                                    asset('build/images/cyclaid/p2list.png'),
-                                    asset('build/images/cyclaid/p2part.png'),
-                                    asset('build/images/cyclaid/p2post.png'),
-                                    asset('build/images/cyclaid/p2profile.png')
-                                ]
-                            } %}
-                        </li> #}
+                    
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Portefolio','space': 'Projet personnel', 
                                 'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
@@ -188,7 +178,7 @@
                     </ul>
                 </div>
             </div>
-            <div id="project-page-contact">
+            <div class="project-page-contact">
                 <div id="contact-field">
                     {% include '/component/_slideButton.html.twig' %}
                         <h1 id="contact">Me contacter</h1>
