@@ -97,7 +97,7 @@
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 767px) {
+@media screen and (min-width: 374px) and (max-width: 767px) {
     #home-page-body {
         .text-container {
             #welcome {
@@ -119,6 +119,37 @@
         #button {
             #bouton-slide {
                 height: 8vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #home-page-body {
+        .text-container {
+            #welcome {
+                font-size: 9vw;
+                padding-left: 0.5rem;
+            }
+
+            #intro {
+                font-size: 9.6vw;
+                padding: 0 5% 0 5%;
+            }
+
+            #fonction {
+                font-size: 5vw;
+                padding-right: 0.5rem;
+            }
+        }
+
+        #button {
+            #bouton-slide {
+                height: 8vh;
+
+                .arrow {
+                    width: 1.6vh;
+                }
             }
         }
     }

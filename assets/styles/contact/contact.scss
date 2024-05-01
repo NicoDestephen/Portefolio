@@ -273,3 +273,133 @@
         }
     }
 }
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #contact-page {
+        #contact-container {
+            #title-container {
+                #main-title-contact-container {
+                    width: 50vh;
+                }
+            }
+            #contact-page-logo {
+                display: none;
+            }
+
+            #phone {
+                margin-top: 35%;
+                margin-right: 0%;
+                margin-left: 0%;
+
+                #phone-logo {
+                    width: 10vh;
+                    height: 10vh;
+                }
+            }
+
+            #mail {
+                margin-top: 35%;
+                margin-left: 5%;
+                margin-right: 0%;
+
+                #mail-logo {
+                    width: 10vh;
+                    height: 10vh;
+                }
+            }
+
+            #github {
+                margin-top: 10%;
+                margin-right: 5%;
+
+                #git-link {
+                    align-items: center;
+
+                    #github-logo {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                }
+            }
+
+            #linkedin {
+                margin-top: 10%;
+                margin-left: 5%;
+
+                #linkedin-link {
+                    align-items: center;
+
+                    #linkedin-logo {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                }  
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #contact-page {
+        #contact-container {
+            #title-container {
+                #main-title-contact-container {
+                    width: 44vh;
+                }
+            }
+            #contact-page-logo {
+                display: none;
+            }
+
+            #phone {
+                margin-top: 25%;
+                margin-right: 0%;
+                margin-left: 0%;
+
+                #phone-logo {
+                    width: 10vh;
+                    height: 10vh;
+                }
+            }
+
+            #mail {
+                margin-top: 10%;
+                margin-left: 0%;
+                margin-right: 10%;
+
+                #mail-logo {
+                    width: 10vh;
+                    height: 10vh;
+                }
+            }
+
+            #github {
+                margin-top: 10%;
+                margin-right: 0%;
+
+                #git-link {
+                    align-items: center;
+
+                    #github-logo {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                }
+            }
+
+            #linkedin {
+                margin-top: 10%;
+                margin-left: 0%;
+
+                #linkedin-link {
+                    align-items: center;
+
+                    #linkedin-logo {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                }  
+            }
+        }
+    }
+}

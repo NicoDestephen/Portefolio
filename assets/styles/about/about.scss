@@ -273,3 +273,171 @@
         }
     }
 }
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #about-page {
+        #about-page-id, #about-page-project {
+            margin-bottom: 1vh;
+            margin-top: 1vh;
+
+            #id-container {
+                width: 50vh;
+    
+                #work{
+                    font-size: 3.2vh;
+                }
+    
+                #identification {
+                    font-size: 3vh;
+                }
+            }
+        }
+        
+        #lala {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            #about-container {
+                height: 35vh;
+                padding: 0.7rem;
+                width: 53vh;
+
+                #about-title {
+                    margin-bottom: 1vh;
+                }
+
+                #about-description {
+                    font-size: 2vh;
+                    line-height: 2.3vh;
+                }
+            }
+
+            #picture {
+                display: none;
+            }
+
+            #stack-container {
+                margin-top: 1vh;
+                height: 22vh;
+                width: 53vh;
+                padding: 0.7rem;
+
+                #stack-title, #framework-title, #gestionnaire-title  {
+                    margin-bottom: 1vh;
+                    font-size: 2.6vh;
+                }
+
+                #stack-description, #framework-description, #gestionnaire-description {
+                    margin: 0 0 0 0;
+                    padding: 0 0 0 1rem;
+                    font-size: 2vh;
+                    line-height: 2vh;
+                }
+            }
+        }
+
+        #about-page-project {
+            #project-container {
+                width: 50vh;
+                height: 10vh;
+
+                #project {
+                    font-size: 4vh;
+                }
+
+                #button {
+                    #bouton-slide {
+                        height: 8vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #about-page {
+        #about-page-id, #about-page-project {
+            margin-bottom: 1vh;
+            margin-top: 1vh;
+
+            #id-container {
+                width: 44vh;
+    
+                #work{
+                    font-size: 2.8vh;
+                }
+    
+                #identification {
+                    font-size: 3vh;
+                }
+            }
+        }
+        
+        #lala {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            #about-container {
+                height: 35vh;
+                padding: 0.7rem;
+                width: 53vh;
+
+                #about-title {
+                    margin-bottom: 1vh;
+                }
+
+                #about-description {
+                    font-size: 1.7vh;
+                    line-height: 2.3vh;
+                }
+            }
+
+            #picture {
+                display: none;
+            }
+
+            #stack-container {
+                margin-top: 1vh;
+                height: 22vh;
+                width: 53vh;
+                padding: 0.7rem;
+
+                #stack-title, #framework-title, #gestionnaire-title  {
+                    margin-bottom: 1vh;
+                    font-size: 2.6vh;
+                }
+
+                #stack-description, #framework-description, #gestionnaire-description {
+                    margin: 0 0 0 0;
+                    padding: 0 0 0 1rem;
+                    font-size: 1.8vh;
+                    line-height: 2vh;
+                }
+            }
+        }
+
+        #about-page-project {
+            #project-container {
+                width: 44vh;
+                height: 10vh;
+
+                #project {
+                    font-size: 4vh;
+                }
+
+                #button {
+                    #bouton-slide {
+                        height: 8vh;
+
+                        .arrow {
+                            width: 1.6vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -409,3 +409,184 @@ margin-bottom: 4vh;
         } 
     }
 }
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #project-page {
+        #title-container {
+            #main-title-project-container {
+                width: 50vh;
+            }
+        }
+
+        .project-field {
+            width: 52vh;
+
+            #project-infos {
+                width: 70%;
+
+                #project-title {
+                    font-size: 3.4vh;
+                }
+
+                #project-description {
+                    justify-content: space-between;
+
+                    #project-space {
+                        font-size: 1.7vh;
+
+                        #space-icon {
+                            width: 4vh;
+                        }
+                    }
+
+                    #project-long {
+                        font-size: 1.7vh;
+
+                        #duration-icon {
+                            width: 4vh;
+                        }
+                    }
+                }
+            }
+
+            .description {
+                p {
+                    font-size: 2vh;
+                }
+            }
+
+            #thumbnail-carousel {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            #thumbnail-field {
+                                width: 6vh;
+                                height: 8vh;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #project-git-link {
+                width: 20%;
+
+                #gitlink-icon {
+                    width: 10vh;
+                }
+            }
+        }
+
+        .project-page-contact {
+            #contact-field {
+                width: 50vh;
+
+                #button {
+                    #bouton-slide {
+                        height: 8vh;
+                    }
+                }
+            } 
+        } 
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #project-page {
+        #title-container {
+            #main-title-project-container {
+                width: 44vh;
+            }
+        }
+
+        .splide__arrow {
+            width: 1em;
+            height: 1em;
+
+            svg {
+                height: 0.5em;
+                width: 0.5em;
+            }
+        }
+
+        .project-field {
+            width: 45vh;
+
+            #project-infos {
+                width: 70%;
+
+                #project-title {
+                    font-size: 3vh;
+                }
+
+                #project-description {
+                    justify-content: space-between;
+
+                    #project-space {
+                        font-size: 1.4vh;
+
+                        #space-icon {
+                            width: 3vh;
+                        }
+                    }
+
+                    #project-long {
+                        font-size: 1.4vh;
+
+                        #duration-icon {
+                            width: 3vh;
+                        }
+                    }
+                }
+            }
+
+            .description {
+                p {
+                    font-size: 1.9vh;
+                }
+            }
+
+            #thumbnail-carousel {
+                padding: 0 5vh 0 5vh;
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            #thumbnail-field {
+                                width: 6vh;
+                                height: 8vh;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #project-git-link {
+                width: 20%;
+
+                #gitlink-icon {
+                    width: 8vh;
+                }
+            }
+        }
+
+        .project-page-contact {
+            #contact-field {
+                width: 44vh;
+
+                #contact {
+                    font-size: 4vh;
+                }
+
+                #button {
+                    #bouton-slide {
+                        height: 8vh;
+
+                        .arrow {
+                            width: 1.6vh;
+                        }
+                    }
+                }
+            } 
+        } 
+    }
+}

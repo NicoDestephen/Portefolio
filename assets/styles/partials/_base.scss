@@ -203,3 +203,64 @@ html {
         }
     }
 }
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    body {
+        #content.slide-up-home-to-about {
+            transition: transform 2.5s ease;
+            transform: translateY(-25.5%);
+        }
+
+        #content.slide-up-home-to-project {
+            transition: transform 2.5s ease;
+            transform: translateY(-53.6%);
+        }
+
+        #content.slide-down-contact-to-project {
+            transition: transform 2.1s ease;
+            transform: translateY(-53.6%);
+        }
+
+        #content.slide-down-contact-to-about {
+            transition: transform 2.1s ease;
+            transform: translateY(-25.5%);
+        }
+
+        .custom-alert {
+            margin-top: -64vh;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    body {
+        #content.slide-up-home-to-about {
+            transition: transform 2.5s ease;
+            transform: translateY(-25%);
+        }
+
+        #content.slide-up-home-to-project {
+            transition: transform 2.5s ease;
+            transform: translateY(-53.3%);
+        }
+
+        #content.slide-up-home-to-contact {
+            transition: transform 2.5s ease;
+            transform: translateY(-75.2%);
+        }
+
+        #content.slide-down-contact-to-project {
+            transition: transform 2.1s ease;
+            transform: translateY(-53.3%);
+        }
+
+        #content.slide-down-contact-to-about {
+            transition: transform 2.1s ease;
+            transform: translateY(-25%);
+        }
+
+        .custom-alert {
+            margin-top: -64vh;
+        }
+    }
+}
