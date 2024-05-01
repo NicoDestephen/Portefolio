@@ -52,19 +52,31 @@
             align-items: center;
             justify-content: center;
             margin-left: 10%;
+            cursor: pointer;
 
             #phone-logo {
-                width: 21vh;
-                height: 25vh;
+                width: 22vh;
+                height: 24vh;
 
                 &:hover {
                     filter: drop-shadow(#ff975f36 0rem 0rem 10px);
+                }
+            }
+
+            #phone-info {
+                #phone-number {
+                    margin-left: 4vh;
+                }
+
+                #phone-copy {
+                    margin-left: 1vh;
                 }
             }
         }
 
         #mail {
             display: flex;
+            text-align: center;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -134,5 +146,130 @@
                 color: $text-color;
             }
         }  
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #contact-page {
+        #contact-container {
+            #contact-page-logo {
+                margin: 2vh 10vh 0vh 10vh;
+            }
+
+            #phone {
+                margin-left: 0%;
+            }
+
+            #mail {
+                margin-right: 0%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #contact-page {
+        #contact-container {
+            #contact-page-logo {
+                margin: 2vh 0vh 0vh 0vh;
+            }
+
+            #phone {
+                margin-left: 0%;
+
+                #phone-logo {
+                    width: 17vh;
+                    height: 21vh;
+                }
+            }
+
+            #mail {
+                margin-right: 0%;
+
+                #mail-logo {
+                    width: 17vh;
+                    height: 21vh;
+                }
+            }
+
+            #github {
+                #github-logo {
+                    width: 17vh;
+                    height: 20vh;
+                }
+            }
+
+            #linkedin {
+                #linkedin-logo {
+                    width: 20vh;
+                    height: 20vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #contact-page {
+        #contact-container {
+            #title-container {
+                #main-title-contact-container {
+                    width: 50vh;
+                }
+            }
+            #contact-page-logo {
+                display: none;
+            }
+
+            #phone {
+                margin-top: 35%;
+                margin-right: 5%;
+                margin-left: 0%;
+
+                #phone-logo {
+                    width: 10vh;
+                    height: 10vh;
+                }
+            }
+
+            #mail {
+                margin-top: 35%;
+                margin-left: 5%;
+                margin-right: 0%;
+
+                #mail-logo {
+                    width: 10vh;
+                    height: 10vh;
+                }
+            }
+
+            #github {
+                margin-top: 10%;
+                margin-right: 5%;
+
+                #git-link {
+                    align-items: center;
+
+                    #github-logo {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                }
+            }
+
+            #linkedin {
+                margin-top: 10%;
+                margin-left: 5%;
+
+                #linkedin-link {
+                    align-items: center;
+
+                    #linkedin-logo {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                }  
+            }
+        }
     }
 }

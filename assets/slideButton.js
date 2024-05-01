@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectContainer.addEventListener('click', function(slide) {
             if (slide.target && slide.target.matches('#bouton-slide')) {
                 content.classList.add('slide-down-contact-to-project');
+                content.classList.remove('slide-up-home-to-about');
                 content.classList.remove('slide-down-contact-to-about');
                 document.title = 'Portefolio DESTEPHEN - Mes projets';
             }
@@ -37,7 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactContainer) {
         contactContainer.addEventListener('click', function(slide) {
             if (slide.target && slide.target.matches('#bouton-slide')) {
+                console.log('coucou');
                 content.classList.add('slide-up-home-to-contact');
+                content.classList.remove('slide-up-home-to-project');
                 content.classList.remove('slide-down-contact-to-project');
                 document.title = 'Portefolio DESTEPHEN - Contact';
             }

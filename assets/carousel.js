@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 gap        : 5,
                 autoplay   : false,
                 drag       : false,
-                width      : '75%',
+                width      : '100%',
                 perPage    : 5,
                 perMove    : 1,
             };

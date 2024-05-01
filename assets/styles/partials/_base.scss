@@ -53,9 +53,153 @@ body {
         transition: transform 2.1s ease;
         transform: translateY(-27%);
     }
+
+    .custom-alert {
+        display: none;
+        position: fixed;
+        width: 303px;
+        margin-top: -75vh;
+        margin-left: 1vh;
+        transform: translate(-50%, -50%);
+        background-color: green;
+        color: $text-color;
+        font-size: 1.9vh;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        animation: slideIn 0.5s forwards;
+    }
+    
+    .custom-alert.show {
+        display: block;
+    }
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }
 
 html {
     background-color: $background;
     font-family: $main-font;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        #content.slide-up-home-to-about {
+            transition: transform 2.5s ease;
+            transform: translateY(-26.5%);
+        }
+
+        #content.slide-up-home-to-project {
+            transition: transform 2.5s ease;
+            transform: translateY(-53.7%);
+        }
+
+        #content.slide-down-contact-to-project {
+            transition: transform 2.1s ease;
+            transform: translateY(-53.7%);
+        }
+
+        #content.slide-down-contact-to-about {
+            transition: transform 2.1s ease;
+            transform: translateY(-26.5%);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    body {
+        #content.slide-up-home-to-about {
+            transition: transform 2.5s ease;
+            transform: translateY(-25.5%);
+        }
+
+        #content.slide-up-home-to-project {
+            transition: transform 2.5s ease;
+            transform: translateY(-53%);
+        }
+
+        #content.slide-down-contact-to-project {
+            transition: transform 2.1s ease;
+            transform: translateY(-53%);
+        }
+
+        #content.slide-down-contact-to-about {
+            transition: transform 2.1s ease;
+            transform: translateY(-25.5%);
+        }
+
+        .custom-alert {
+            margin-top: -68vh;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        #content.slide-up-home-to-about {
+            transition: transform 2.5s ease;
+            transform: translateY(-24.5%);
+        }
+
+        #content.slide-up-home-to-project {
+            transition: transform 2.5s ease;
+            transform: translateY(-52.3%);
+        }
+
+        #content.slide-up-home-to-contact {
+            transition: transform 2.5s ease;
+            transform: translateY(-74%);
+        }
+
+        #content.slide-down-contact-to-project {
+            transition: transform 2.1s ease;
+            transform: translateY(-52.3%);
+        }
+
+        #content.slide-down-contact-to-about {
+            transition: transform 2.1s ease;
+            transform: translateY(-24.5%);
+        }
+
+        .custom-alert {
+            margin-top: -68vh;
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    body {
+        #content.slide-up-home-to-about {
+            transition: transform 2.5s ease;
+            transform: translateY(-25.9%);
+        }
+
+        #content.slide-up-home-to-project {
+            transition: transform 2.5s ease;
+            transform: translateY(-53.9%);
+        }
+
+        #content.slide-down-contact-to-project {
+            transition: transform 2.1s ease;
+            transform: translateY(-53.9%);
+        }
+
+        #content.slide-down-contact-to-about {
+            transition: transform 2.1s ease;
+            transform: translateY(-25.9%);
+        }
+
+        .custom-alert {
+            margin-top: -64vh;
+        }
+    }
 }

@@ -47,6 +47,7 @@
             justify-content: center;
             align-items: center;
             padding: 1.4vh;
+            cursor: pointer;
 
             &:hover {
                 box-shadow: 0 0 10px $home-main-text-color;
@@ -93,5 +94,32 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #home-page-body {
+        .text-container {
+            #welcome {
+                font-size: 9vw;
+                padding-left: 0.5rem;
+            }
+
+            #intro {
+                font-size: 9.6vw;
+                padding: 0 5% 0 5%;
+            }
+
+            #fonction {
+                font-size: 5vw;
+                padding-right: 0.5rem;
+            }
+        }
+
+        #button {
+            #bouton-slide {
+                height: 8vh;
+            }
+        }
     }
 }

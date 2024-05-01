@@ -45,28 +45,18 @@ if (homeLink) {
         var clickedContact = userHistory[userHistory.length - 2] === 'contact';
 
         if (clickedAbout) {
-            console.log('je clique sur home après avoir cliqué sur about');
             content.classList.add('slide-down-about-to-home');
             document.title = 'Portefolio DESTEPHEN - Home';
-            // navbar.classList.add('homeLink-clicked');
         } else if (clickedProject) {
-            console.log('je clique sur home après avoir cliqué sur project');
             content.classList.add('slide-down-about-to-home');
             document.title = 'Portefolio DESTEPHEN - Home';
-            // navbar.classList.add('homeLink-clicked');
         } else if (clickedContact) {
-            console.log('je clique sur home après avoir cliqué sur contact');
             content.classList.add('slide-down-about-to-home');
             document.title = 'Portefolio DESTEPHEN - Home';
-            // navbar.classList.add('homeLink-clicked');
         } else {
-            console.log('je clique sur home directement');
             content.classList.add('slide-down-about-to-home');
             document.title = 'Portefolio DESTEPHEN - Home';
-            // navbar.classList.add('homeLink-clicked');
         }
-
-        console.log(userHistory);
     });
 }
 
@@ -81,28 +71,18 @@ if (aboutLink) {
         var clickedContact = userHistory[userHistory.length - 2] === 'contact';
 
         if (clickedHome) {
-            console.log('je clique sur about après avoir cliqué sur home');
             content.classList.add('slide-up-home-to-about');
             document.title = 'Portefolio DESTEPHEN - A propos';
-            // navbar.classList.add('aboutLink-clicked');
         } else if (clickedProject) {
-            console.log('je clique sur about après avoir cliqué sur project');
             content.classList.add('slide-down-contact-to-about');
             document.title = 'Portefolio DESTEPHEN - A propos';
-            // navbar.classList.add('aboutLink-clicked');
         } else if (clickedContact) {
-            console.log('je clique sur about après avoir cliqué sur contact');
             content.classList.add('slide-down-contact-to-about');
             document.title = 'Portefolio DESTEPHEN - A propos';
-            // navbar.classList.add('aboutLink-clicked');
         } else {
-            console.log('je clique sur about directement');
             content.classList.add('slide-up-home-to-about');
             document.title = 'Portefolio DESTEPHEN - A propos';
-            // navbar.classList.add('aboutLink-clicked');
         }
-
-        console.log(userHistory);
     });
 }
 
@@ -117,29 +97,19 @@ if (projectLink) {
         var clickedContact = userHistory[userHistory.length - 2] === 'contact';
 
         if (clickedHome) {
-            console.log('je clique sur project après avoir cliqué sur home');
             content.classList.add('slide-up-home-to-project');
             document.title = 'Portefolio DESTEPHEN - Mes projets';
-            // navbar.classList.add('projectLink-clicked');
         } else if (clickedAbout) {
-            console.log('je clique sur project après avoir cliqué sur about');
             content.classList.add('slide-down-contact-to-project');
             document.title = 'Portefolio DESTEPHEN - Mes projets';
-            // navbar.classList.add('projectLink-clicked');
         } else if (clickedContact) {
-            console.log('je clique sur project après avoir cliqué sur contact');
             content.classList.add('slide-down-contact-to-project');
             document.title = 'Portefolio DESTEPHEN - Mes projets';
-            // navbar.classList.add('projectLink-clicked');
         }
         else {
-            console.log('je clique sur project directement');
             content.classList.add('slide-up-home-to-project');
             document.title = 'Portefolio DESTEPHEN - Mes projets';
-            // navbar.classList.add('projectLink-clicked');
         }
-
-        console.log(userHistory);
     });
 }
 
@@ -154,27 +124,17 @@ if (contactLink) {
         var clickedProject = userHistory[userHistory.length - 2] === 'project';
 
         if (clickedHome) {
-            console.log('je clique sur contact après avoir cliqué sur home');
             content.classList.add('slide-up-home-to-contact');
             document.title = 'Portefolio DESTEPHEN - Contact';
-            // navbar.classList.add('contactLink-clicked');
         } else if (clickedAbout) {
-            console.log('je clique sur contact après avoir cliqué sur about');
             content.classList.add('slide-up-home-to-contact');
             document.title = 'Portefolio DESTEPHEN - Contact';
-            // navbar.classList.add('contactLink-clicked');
         } else if (clickedProject) {
-            console.log('je clique sur contact après avoir cliqué sur project');
             content.classList.add('slide-up-home-to-contact');
             document.title = 'Portefolio DESTEPHEN - Contact';
-            // navbar.classList.add('contactLink-clicked');
         } else {
-            console.log('je clique sur contact directement');
             content.classList.add('slide-up-home-to-contact');
             document.title = 'Portefolio DESTEPHEN - Contact';
-            // navbar.classList.add('contactLink-clicked');
         }
-
-        console.log(userHistory);
     });
 }

@@ -27,14 +27,15 @@
     display: none;
 }
 
+
 #project-page {
-    margin-bottom: 4vh;
+margin-bottom: 4vh;
 
     #title-container {
         display: flex;
         justify-content: center;
         margin-bottom: 1vh;
-    
+
         #main-title-project-container {
             display: flex;
             justify-content: center;
@@ -91,7 +92,7 @@
                         margin-right: 1vh;
                     }
                 }
-    
+
                 #project-long {
                     display: flex;
                     align-items: center;
@@ -141,6 +142,7 @@
             #button-grow {
                 background-color: transparent;
                 border: none;
+                cursor: pointer;
             }
         }
 
@@ -163,12 +165,13 @@
                                 width: 100%;
                                 height: 100%;
                                 object-fit: contain;
+                                cursor: pointer;
                             }
                         }      
                     }
                 }
             }
-          
+            
         }
     }
 
@@ -213,7 +216,7 @@
                 font-size: 5vh;
                 color: $home-main-text-color;
             }
-     
+        
             #button {
                 display: flex;
                 justify-content: center;
@@ -229,6 +232,7 @@
                     justify-content: center;
                     align-items: center;
                     padding: 1.4vh;
+                    cursor: pointer;
 
                     &:hover {
                         box-shadow: 0 0 10px $home-main-text-color;
@@ -258,7 +262,6 @@
         
         .modal-content {
             margin: auto;
-            display: block;
             width: 80%;
             max-width: max-content;
             max-height: -webkit-fill-available;
@@ -273,4 +276,136 @@
             font-weight: bold;
             cursor: pointer;
         }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #project-page {
+        .project-field {
+            width: 111vh;
+
+            #thumbnail-carousel {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            #thumbnail-field {
+                                height: 17vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #project-page {
+        .project-field {
+            width: 72vh;
+
+            #project-infos {
+                width: 75%;
+
+                #project-description {
+                    #project-space {
+                        font-size: 2vh;
+                        width: 50%;
+                    }
+
+                    #project-long {
+                        font-size: 2vh;
+                        width: 50%;
+                    }
+                }
+            }
+
+            #project-git-link {
+                width: 25%;
+            }
+
+            #thumbnail-carousel {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            #thumbnail-field {
+                                height: 13vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #project-page {
+        #title-container {
+            #main-title-project-container {
+                width: 50vh;
+            }
+        }
+
+        .project-field {
+            width: 59vh;
+
+            #project-infos {
+                width: 70%;
+
+                #project-description {
+                    justify-content: space-between;
+
+                    #project-space {
+                        font-size: 1.7vh;
+
+                        #space-icon {
+                            width: 4vh;
+                        }
+                    }
+
+                    #project-long {
+                        font-size: 1.7vh;
+
+                        #duration-icon {
+                            width: 4vh;
+                        }
+                    }
+                }
+            }
+
+            #thumbnail-carousel {
+                .splide__track {
+                    .splide__list {
+                        .splide__slide {
+                            #thumbnail-field {
+                                width: 6vh;
+                                height: 8vh;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #project-git-link {
+                width: 20%;
+
+                #gitlink-icon {
+                    width: 10vh;
+                }
+            }
+        }
+
+        .project-page-contact {
+            #contact-field {
+                width: 50vh;
+
+                #button {
+                    #bouton-slide {
+                        height: 8vh;
+                    }
+                }
+            } 
+        } 
+    }
 }
