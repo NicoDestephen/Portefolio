@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactContainer) {
         contactContainer.addEventListener('click', function(slide) {
             if (slide.target && slide.target.matches('#bouton-slide')) {
-                console.log('coucou');
                 content.classList.add('slide-up-home-to-contact');
                 content.classList.remove('slide-up-home-to-project');
                 content.classList.remove('slide-down-contact-to-project');
