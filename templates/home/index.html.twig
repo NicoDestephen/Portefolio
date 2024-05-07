@@ -31,7 +31,7 @@
                             Concpteur développeur d'application. Je me dirige vers un profil full-stack. */
                         </span>
                     </div>
-                    <img id="picture" src="{{ asset('build/images/picture.svg') }}">
+                    <img id="picture" src="{{ asset('build/images/photo.svg') }}">
                     <div id="stack-container">
                         <h1 id="stack-title">Langages ( )</h1>
                         <span id="stack-description">
@@ -71,63 +71,75 @@
                     
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Portefolio','space': 'Projet personnel', 
-                                'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'duration': '1 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
                                 'description': 'Projet réalisé pour mettre en place mon portefolio en ligne. J\'ai utilisé le framework Symfony 
                                 pour réaliser ce projet en mélengant du PHP et du Javascript. Ce travail m\'a permis de me challenger sur l\'utilisation
                                 de Javascript, langage que je n\'avais pas beaucoup utilisé lors de ma formation.',
                                 'image_urls': [
-                                        asset('build/images/originDigital/homeP3.png'),
-                                        asset('build/images/originDigital/logP3.png'),
-                                        asset('build/images/originDigital/indexp3.png'),
-                                        asset('build/images/originDigital/languageP3.png'),
-                                        asset('build/images/originDigital/quizP3.png'),
-                                        asset('build/images/originDigital/playerP3.png'),
-                                        asset('build/images/originDigital/mobileIndex3.png'),
-                                        asset('build/images/originDigital/mobileLogP3.png'),
-                                        asset('build/images/originDigital/mobileQuizP3.png'),
-                                        asset('build/images/originDigital/mobilePlayerP3.png')
+                                        asset('build/images/portefolio/home.png'),
+                                        asset('build/images/portefolio/about.png'),
+                                        asset('build/images/portefolio/project.png'),
+                                        asset('build/images/portefolio/contact.png'),
+                                        asset('build/images/portefolio/mobileHome.png'),
+                                        asset('build/images/portefolio/mobileAbout.png'),
+                                        asset('build/images/portefolio/mobileProject.png'),
+                                        asset('build/images/portefolio/mobileContact.png'),
                                 ]
                             } %}
                         </li>
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Origin\'s Digital','space': 'Projet d\'école', 
-                                'duration': '2 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'duration': '2 mois', 'link' : 'https://github.com/WildCodeSchool-2023-09/php-paris-p3-originsdigital.git', 
                                 'description': 'Plate-forme de VOD en version web et web mobile pour apprendre le
                                 développement web à distance. Ce projet s\'inscrit dans le cadre de ma formation de développeur web. Il à été codé sur
                                 le framework Symfony et m\'à servit de suport lors du passage de mon titre de fin de formation.',
                                 'image_urls': [
-                                        asset('build/images/originDigital/homeP3.png'),
-                                        asset('build/images/originDigital/logP3.png'),
-                                        asset('build/images/originDigital/indexp3.png'),
-                                        asset('build/images/originDigital/languageP3.png'),
-                                        asset('build/images/originDigital/quizP3.png'),
-                                        asset('build/images/originDigital/playerP3.png'),
-                                        asset('build/images/originDigital/mobileIndex3.png'),
-                                        asset('build/images/originDigital/mobileLogP3.png'),
-                                        asset('build/images/originDigital/mobileQuizP3.png'),
-                                        asset('build/images/originDigital/mobilePlayerP3.png')
+                                        asset('build/images/originDigital/home.png'),
+                                        asset('build/images/originDigital/language.png'),
+                                        asset('build/images/originDigital/category.png'),
+                                        asset('build/images/originDigital/videos.png'),
+                                        asset('build/images/originDigital/player.png'),
+                                        asset('build/images/originDigital/modalPlaylist.png'),
+                                        asset('build/images/originDigital/introQuiz.png'),
+                                        asset('build/images/originDigital/quiz.png'),
+                                        asset('build/images/originDigital/dashboard.png'),
+                                        asset('build/images/originDigital/uploadVideo.png'),
+                                        asset('build/images/originDigital/mobileHome.png'),
+                                        asset('build/images/originDigital/mobileCategory.png'),
+                                        asset('build/images/originDigital/mobileLanguage.png'),
+                                        asset('build/images/originDigital/mobileVideos.png'),
+                                        asset('build/images/originDigital/mobilePlayer.png'),
+                                        asset('build/images/originDigital/mobileModalePlaylist.png'),
+                                        asset('build/images/originDigital/mobileNewPlaylist.png'),
+                                        asset('build/images/originDigital/mobileViewPlaylist.png'),
+                                        asset('build/images/originDigital/mobileQuiz.png'),
+                                        asset('build/images/originDigital/mobileProgram.png'),
+                                        asset('build/images/originDigital/mobileDashboard.png'),
+                                        asset('build/images/originDigital/mobileDashboardList.png'),
+                                        asset('build/images/originDigital/mobileNewVideo.png'),
                                 ]
                             } %}
                         </li>
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Cylaid','space': 'Projet d\'école', 
-                                'duration': '1 mois', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'duration': '1 mois', 'link' : 'https://github.com/NicoDestephen/PHP-paris-p2-cyclaid.git', 
                                 'description': 'Marketplace mobile de partage de pièces de vélo. L\'application web à été développée avec 
                                 PHP pour la partie back end, le front end est quand à lui assuré par JavaScript et CSS et HTML. 
                                 Nous avons utilisé une architecture MVC ainsi qu\'une base de donnée SQL.',
                                 'image_urls': [
-                                        asset('build/images/cyclaid/p2home.png'),
-                                        asset('build/images/cyclaid/p2category.png'),
-                                        asset('build/images/cyclaid/p2list.png'),
-                                        asset('build/images/cyclaid/p2part.png'),
-                                        asset('build/images/cyclaid/p2post.png'),
-                                        asset('build/images/cyclaid/p2profile.png')
+                                        asset('build/images/cyclaid/home.jpg'),
+                                        asset('build/images/cyclaid/category.jpg'),
+                                        asset('build/images/cyclaid/list.jpg'),
+                                        asset('build/images/cyclaid/part.jpg'),
+                                        asset('build/images/cyclaid/request.jpg'),
+                                        asset('build/images/cyclaid/givePart.jpg'),
+                                        asset('build/images/cyclaid/profile.jpg')
                                 ]
                             } %}
                         </li>
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Projet Geralt','space': 'Projet d\'école', 
-                                'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'duration': '2 semaines', 'link' : 'https://github.com/NicoDestephen/projectGeralt.git', 
                                 'description': 'Site web statique type CV virtuel d\’un personnage fictif. Pour de ce projet j\'ai pu mettre en 
                                 application les premières notions abordées en 1 mois de formation telles que la mise en place de formulaires et 
                                 leur sécurisation grâce à l\'utilisation de PHP, les basiques du CSS et du HTML ainsi que quelques ajouts en JS.',
@@ -142,7 +154,7 @@
                         </li>
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Escapotron','space': 'Projet d\'école', 
-                                'duration': '24h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'duration': '24h', 'link' : 'https://github.com/WildCodeSchool-2023-09/php-paris-hackathon1-escapotron.git', 
                                 'description': 'Appli mobile de générateur automatique d\’excuses. Ce projet à été développé dans le cadre d\'un
                                 hackathon. Nous avons développé cette application en HTML, CSS et Javascript. Un algorithme prend en charge la génération des excuses 
                                 en prenant en compte tous les éléments sélectionnés par l\'utilisateur.',
@@ -159,17 +171,17 @@
                         </li>
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Heaven\'s Hair','space': 'Projet d\'école', 
-                                'duration': '48h', 'link' : 'https://github.com/NicoDestephen/Portefolio.git', 
+                                'duration': '48h', 'link' : 'https://github.com/WildCodeSchool-2023-09/php-paris-hackathon2-greenconsult.git', 
                                 'description': 'Plate forme de prise de rendez vous chez des coiffeurs L\’Oreal. Cette application à été développée
                                 sur le framework Symfony en utilisant les langages PHP, HTML, CSS et Javascript. Nous avons utilisé une API pour 
                                 l\'implémentation de la carte comprenant les coiffeurs à proximité',
                                 'image_urls': [
-                                        asset('build/images/cyclaid/p2home.png'),
-                                        asset('build/images/cyclaid/p2category.png'),
-                                        asset('build/images/cyclaid/p2list.png'),
-                                        asset('build/images/cyclaid/p2part.png'),
-                                        asset('build/images/cyclaid/p2post.png'),
-                                        asset('build/images/cyclaid/p2profile.png')
+                                        asset('build/images/heavenHair/home.png'),
+                                        asset('build/images/heavenHair/rdv.png'),
+                                        asset('build/images/heavenHair/products.png'),
+                                        asset('build/images/heavenHair/id.png'),
+                                        asset('build/images/heavenHair/map.png'),
+                                        asset('build/images/heavenHair/promo.png')
                                 ]
                             } %}
                         </li>
