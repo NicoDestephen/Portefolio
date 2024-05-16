@@ -219,24 +219,37 @@ margin-bottom: 4vh;
         border-radius: 15px;
         background-color: rgb(0, 0, 0);
         background-color: rgb(0 0 0 / 88%);
-        }
         
-        .modal-content {
-            margin: auto;
-            width: 80%;
-            max-width: max-content;
-            max-height: -webkit-fill-available;
-        }
-        
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+            .modal-content {
+                margin: auto;
+                width: 80%;
+                max-width: max-content;
+                max-height: -webkit-fill-available;
+            }
+            
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #prev, #next {
+                height: 5vh;
+                margin: auto;
+                background-color: $card-background-color;
+                border: $button-border-color;
+                border-radius: $border-radius;
+                color: $home-main-text-color;
+
+                &:hover {
+                    box-shadow: 0 0 10px $home-main-text-color;
+                }
+            }
+    }
 }
 
 
