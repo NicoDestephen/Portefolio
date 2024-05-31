@@ -2,13 +2,13 @@
     <div id="project-infos">
         <h1 id="project-title">{{ title }}</h1>
         <div id="project-description">
-            <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}">{{ space }}</h2>
-            <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}">{{ duration }}</h2>
+            <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}" alt="space-icon">{{ space }}</h2>
+            <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}" alt="duration-icon">{{ duration }}</h2>
         </div>
     </div>
     <div id="project-git-link">
         <div>
-            <a href={{ link }} target="_blank"><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}"></a>
+            <a href={{ link }} target="_blank"><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}" alt="gitlink-icon"></a>
         </div>
     </div>
     <div class='description' class='hidden'>
@@ -21,7 +21,7 @@
                 {% for image_url in image_urls %}
                     <li class="splide__slide">
                         <div id="thumbnail-field">
-                            <img class="thumbnail-image" src="{{ image_url }}">
+                            <img class="thumbnail-image" src="{{ image_url }}" alt="thumbnail-image">
                         </div>
                     </li>
                 {% endfor %}
