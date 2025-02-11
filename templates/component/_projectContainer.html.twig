@@ -4,11 +4,12 @@
         <div id="project-description">
             <h2 id="project-space"><img id="space-icon" src="{{ asset('build/images/space.svg') }}" alt="space-icon">{{ space }}</h2>
             <h2 id="project-long"><img id="duration-icon" src="{{ asset('build/images/duration.svg') }}" alt="duration-icon">{{ duration }}</h2>
-        </div>
-    </div>
-    <div id="project-git-link">
-        <div>
-            <a href={{ link }} target="_blank"><img id="gitlink-icon" src="{{ asset('build/images/gitLink.svg') }}" alt="gitlink-icon"></a>
+            {% if link is not empty %}
+                <a href={{ link }} target="_blank" id="project-link"><img id="link-icon" src="{{ asset('build/images/link.svg') }}" alt="link-icon"></a>
+            {% endif %}
+            {% if gitLink is not empty %}
+                <a href={{ gitLink }} target="_blank" id="project-git-link"><img id="gitLink-icon" src="{{ asset('build/images/gitLink.svg') }}" alt="gitLink-icon"></a>
+            {% endif %}
         </div>
     </div>
     <div class='description' class='hidden'>
