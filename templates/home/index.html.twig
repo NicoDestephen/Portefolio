@@ -66,7 +66,21 @@
                     <button id="next">&gt;</button>
                 </div>
                     <ul class="splide__list">
-                    
+                        <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Nicolas Destephen Développement','space': 'Projet freelance', 
+                                'duration': '2 mois', 'gitLink': '',
+                                'link' : 'https://nicolas-destephen.com/',
+                                'description': 'Création du site vitrine de ma micro entreprise. Ce projet à été réalisé avec React pour la partie front et Node.js et express pour la partie back (API).',
+                                'image_urls': [
+                                        asset('build/images/napcloud/nddev1.png'),
+                                        asset('build/images/napcloud/nddev2.png'),
+                                        asset('build/images/napcloud/nddev3.png'),
+                                        asset('build/images/napcloud/nddev4.png'),
+                                        asset('build/images/napcloud/nddev5.png'),
+                                        asset('build/images/napcloud/nddev6.png'),
+                                ]
+                            } %}
+                        </li>
                         <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Nap Cloud','space': 'Projet freelance', 
                                 'duration': '3 semaines', 'gitLink': '',
