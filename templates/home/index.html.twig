@@ -67,6 +67,16 @@
                 </div>
                     <ul class="splide__list">
                         <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'Algoritude','space': 'Projet freelance', 
+                                'duration': '1 mois', 'gitLink': '',
+                                'link' : 'https://algoritude.com/',
+                                'description': 'Création d’un site vitrine pour une société informatique spécialisée en solutions numériques à valeur ajoutée en environnement sécurisé.',
+                                'image_urls': [
+                                        asset('build/images/ndDev/algoritude1.png'),
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Nicolas Destephen Développement','space': 'Projet freelance', 
                                 'duration': '2 mois', 'gitLink': '',
                                 'link' : 'https://nicolas-destephen.com/',
