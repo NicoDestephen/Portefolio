@@ -153,6 +153,11 @@ margin-bottom: 4vh;
             padding: 0 10vh 0 10vh;
             margin: auto;
 
+        #thumbnail-carousel-list {
+            display: flex;
+            justify-content: center;
+        }
+
             .splide__track {
                 .splide__list {
                     .splide__slide {

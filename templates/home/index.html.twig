@@ -79,6 +79,19 @@
                             } %}
                         </li>
                         <li class="splide__slide">
+                            {% include '/component/_projectContainer.html.twig' with {'title': 'DMConseil Travel','space': 'Projet freelance', 
+                                'duration': '2 semaines', 'gitLink': '',
+                                'link' : 'https://dmconseiltravel.fr/',
+                                'description': 'Création d’un site vitrine pour un Group Travel Planner.',
+                                'image_urls': [
+                                        asset('build/images/dmconseiltravel/dmconseiltravel1.png'),
+                                        asset('build/images/dmconseiltravel/dmconseiltravel2.png'),
+                                        asset('build/images/dmconseiltravel/dmconseiltravel3.png'),
+                                        asset('build/images/dmconseiltravel/dmconseiltravel4.png'),
+                                ]
+                            } %}
+                        </li>
+                        <li class="splide__slide">
                             {% include '/component/_projectContainer.html.twig' with {'title': 'Nicolas Destephen Développement','space': 'Projet freelance', 
                                 'duration': '2 mois', 'gitLink': '',
                                 'link' : 'https://nicolas-destephen.com/',
